@@ -14,9 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.PopupWindow;
 
-import com.anarchy.classify.ClassifyView;
 import com.anarchy.classifyview.R;
 import com.anarchy.classifyview.core.BaseFragment;
 import com.anarchy.classifyview.databinding.ExtraIreaderBottomBarBinding;
@@ -30,6 +28,8 @@ import java.util.Random;
  * Email:  rsshinide38@163.com
  * Date: 16/12/26 15:01
  * Description:
+ *
+ * 使用了  databinding , 只绑定了view, 并没有有使  data和 view 双向绑定
  */
 public class IReaderMockFragment extends BaseFragment {
     private FragmentMockIreaderBinding mBinding;
@@ -65,6 +65,7 @@ public class IReaderMockFragment extends BaseFragment {
         mBottomBinding = DataBindingUtil.inflate(inflater, R.layout.extra_ireader_bottom_bar, null, false);
         mRandom = new Random(System.currentTimeMillis());
         mAdapter = new IReaderAdapter();
+//
         mAdapter.registerObserver(new IReaderAdapter.IReaderObserver() {
             int count = 0;
 

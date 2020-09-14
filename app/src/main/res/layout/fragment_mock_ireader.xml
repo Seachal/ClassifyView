@@ -41,22 +41,24 @@
         </android.support.v7.widget.Toolbar>
 
         <com.anarchy.classifyview.sample.ireader.widget.IReaderClassifyView
-            android:layout_below="@id/action_bar"
-            android:layout_above="@id/bottom_holder"
             android:id="@+id/classify_view"
-            app:MainPaddingLeft="12dp"
-            app:MainPaddingRight="12dp"
-            app:SubPaddingLeft="12dp"
-            app:SubPaddingRight="12dp"
-            app:MainClipToPadding="false"
-            app:SubClipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_holder"
+            android:layout_below="@id/action_bar"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-60dp"
             app:DragInMergeScaleX="0.9"
             app:DragInMergeScaleY="0.9"
             app:DragScaleX="1.1"
             app:DragScaleY="1.1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            app:MainClipToPadding="false"
+            app:MainPaddingLeft="12dp"
+            app:MainPaddingRight="12dp"
+            app:SubClipToPadding="false"
+            app:SubPaddingLeft="12dp"
+            app:SubPaddingRight="12dp" />
+
         <android.support.v7.widget.Toolbar
             android:elevation="3dp"
             android:background="#FFF"

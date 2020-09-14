@@ -252,3 +252,7 @@ void onDialogCancel | 次级窗口隐藏时的回调
 **当前项目效果展现 使用[SimpleAdapter](https://github.com/AlphaBoom/ClassifyView/blob/master/classify/src/main/java/com/anarchy/classify/simple/SimpleAdapter.java)**
 
 
+# 书架实现原理
+
+recyclerview 嵌套 recyclerview 把一个 把父 的 item 拖动到 子recyclerview中。
+
